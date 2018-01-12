@@ -90,3 +90,24 @@ QUERY 1 1 1 3 3 3. As (2,2,2) is updated to 4 and the rest are all 0. The answer
 UPDATE 1 1 1 23. updates the cell (1,1,1) to 23. QUERY 2 2 2 4 4 4. Only the cell (1,1,1) and (2,2,2) are non-zero and (1,1,1) is not between (2,2,2) and (4,4,4). So, the answer is 4. 
 
 QUERY 1 1 1 3 3 3. 2 cells are non-zero and their sum is 23+4 = 27.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+El proyecto fue desarrollado en MVC C#
+
+Descripción de capas:
+1. PruebaSumatoriaCubo.Web: capa de presentación para el ingreso y salida de datos.
+2. PruebaSumatoriaCubo.Objetos: capa para la definición de objetos a usar en la solución
+3. PruebaSumatoriaCubo.BO: capa que contiene la logica de negocio.
+
+Responsabilidad de clases:
+ En PruebaSumatoriaCubo.Web
+ - OperacionesController: es el controlador de las operaciones.
+ - InicioViewModel: es el view model utilizado para renderizar la vista, capturar y retornar informacion.
+ 
+ En PruebaSumatoriaCubo.Objetos:
+ - CasoPrueba: esta clase representa cada caso de prueba ingresado en la entrada, tiene sus atributos N, M y las operaciones del caso.
+ 
+ En PruebaSumatoriaCubo.BO:
+ - OperacionesBO: esta clase contiene la logica de negocio que se encarga de procesar la entrada de los datos, transformarla en los objetos CasoPrueba y realizar las operaciones de cada caso.
+  
+ 
