@@ -11,7 +11,7 @@ namespace PruebaSumatoriaCubo.Web.Controllers
         public ActionResult Index()
         {
             //return View();
-            return RedirectToAction("Inicio","Operaciones",null);
+            return RedirectToAction("Index","Operaciones",null);
         }
 
     }
