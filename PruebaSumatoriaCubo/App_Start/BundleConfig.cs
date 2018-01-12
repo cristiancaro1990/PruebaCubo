@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace PruebaSumatoriaCubo
+namespace PruebaSumatoriaCubo.Web
 {
     public class BundleConfig
     {

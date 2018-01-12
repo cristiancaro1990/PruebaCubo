@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSumatoriaCubo", "PruebaSumatoriaCubo\PruebaSumatoriaCubo.csproj", "{DE50191E-440D-4270-8070-068B83FD4C21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSumatoriaCubo.Web", "PruebaSumatoriaCubo\PruebaSumatoriaCubo.Web.csproj", "{DE50191E-440D-4270-8070-068B83FD4C21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSumatoriaCubo.Tests", "PruebaSumatoriaCubo.Tests\PruebaSumatoriaCubo.Tests.csproj", "{DF9C585B-6DE9-42EE-8D76-94440BEA4269}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSumatoriaCubo.Objetos", "PruebaSumatoriaCubo.Objetos\PruebaSumatoriaCubo.Objetos.csproj", "{7ED23AD2-BE6A-4DCF-BA71-A8BE0C4222AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaSumatoriaCubo.BO", "PruebaSumatoriaCubo.BO\PruebaSumatoriaCubo.BO.csproj", "{1A4A1DF5-CF24-4F2B-8B61-0BB92F149CB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DF9C585B-6DE9-42EE-8D76-94440BEA4269}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF9C585B-6DE9-42EE-8D76-94440BEA4269}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF9C585B-6DE9-42EE-8D76-94440BEA4269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED23AD2-BE6A-4DCF-BA71-A8BE0C4222AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED23AD2-BE6A-4DCF-BA71-A8BE0C4222AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED23AD2-BE6A-4DCF-BA71-A8BE0C4222AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED23AD2-BE6A-4DCF-BA71-A8BE0C4222AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4A1DF5-CF24-4F2B-8B61-0BB92F149CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4A1DF5-CF24-4F2B-8B61-0BB92F149CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4A1DF5-CF24-4F2B-8B61-0BB92F149CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4A1DF5-CF24-4F2B-8B61-0BB92F149CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,48 @@
+﻿@model PruebaSumatoriaCubo.Web.Models.ViewModels.InicioViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            <h2 class="tituloPagina">Sumatoria de cubo</h2>
+        </div>
+    </div>
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Operaciones, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.Operaciones, new { htmlAttributes = new { @id = "txtOperaciones", @class = "form-control" , @style = "height: 200px;" } })
+                @Html.ValidationMessageFor(model => model.Operaciones, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Salida, htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.Salida, new { htmlAttributes = new { @id = "txtSalida", @class = "form-control", @disabled = true, @style = "height: 200px;" } })
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-12">
+                <input type="submit" value="ENVIAR" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+
+
